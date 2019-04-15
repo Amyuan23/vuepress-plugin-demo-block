@@ -1,13 +1,18 @@
 {
   "name": "@d0whc3r/vuepress-plugin-demo-block",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "demo block for vuepress both support vue and react",
   "main": "lib/index.js",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "comp": "rollup -c rollup.config.js",
-    "watch": "rollup -wc rollup.config.js"
+    "watch": "rollup -wc rollup.config.js",
+    "deploy": "yarn comp && yarn build && yarn version",
+    "deploy:patch": "yarn deploy --patch && npm publish",
+    "deploy:minor": "yarn deploy --minor && npm publish",
+    "deploy:major": "yarn deploy --major && npm publish",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -16,6 +21,9 @@
   "keywords": [
     "vuepress-plugin",
     "demo-block"
+  ],
+  "files": [
+    "lib"
   ],
   "author": "d0whc3r",
   "license": "MIT",

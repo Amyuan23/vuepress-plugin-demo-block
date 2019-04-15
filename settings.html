@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Settings | Demo Block</title>
+    <meta name="description" content="plugin for vuepress to display vue or react demo">
+    <script src="https://cdn.jsdelivr.net/npm/react@16.6.3/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@16.6.3/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/numerify/lib/index.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/v-charts/lib/line.min.js"></script>
+  <script src="https://www.googletagmanager.com/gtag/js?id=UA-122325348-1"></script>
+  <script src="/vuepress-plugin-demo-block/ga.js"></script>
+  <script src="/vuepress-plugin-demo-block/bt.js"></script>
+    
+    <link rel="preload" href="/vuepress-plugin-demo-block/assets/css/0.styles.50fdbf32.css" as="style"><link rel="preload" href="/vuepress-plugin-demo-block/assets/js/app.1039de93.js" as="script"><link rel="preload" href="/vuepress-plugin-demo-block/assets/js/2.8f000fed.js" as="script"><link rel="preload" href="/vuepress-plugin-demo-block/assets/js/7.49c44ff3.js" as="script"><link rel="prefetch" href="/vuepress-plugin-demo-block/assets/js/10.58167186.js"><link rel="prefetch" href="/vuepress-plugin-demo-block/assets/js/11.83ebddb4.js"><link rel="prefetch" href="/vuepress-plugin-demo-block/assets/js/12.005f3833.js"><link rel="prefetch" href="/vuepress-plugin-demo-block/assets/js/13.c64a7060.js"><link rel="prefetch" href="/vuepress-plugin-demo-block/assets/js/14.d0745f3e.js"><link rel="prefetch" href="/vuepress-plugin-demo-block/assets/js/15.42c1aac5.js"><link rel="prefetch" href="/vuepress-plugin-demo-block/assets/js/3.919394bc.js"><link rel="prefetch" href="/vuepress-plugin-demo-block/assets/js/4.f4f40028.js"><link rel="prefetch" href="/vuepress-plugin-demo-block/assets/js/5.a2849ebb.js"><link rel="prefetch" href="/vuepress-plugin-demo-block/assets/js/6.32c495f9.js"><link rel="prefetch" href="/vuepress-plugin-demo-block/assets/js/8.55ca5d29.js"><link rel="prefetch" href="/vuepress-plugin-demo-block/assets/js/9.b99fb80b.js">
+    <link rel="stylesheet" href="/vuepress-plugin-demo-block/assets/css/0.styles.50fdbf32.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-plugin-demo-block/" class="home-link router-link-active"><!----> <span class="site-name">Demo Block</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-plugin-demo-block/settings.html" class="nav-link router-link-exact-active router-link-active">English</a></li><li class="dropdown-item"><!----> <a href="/vuepress-plugin-demo-block/zh/settings.html" class="nav-link">简体中文</a></li></ul></div></div> <a href="https://github.com/d0whc3r/vuepress-plugin-demo-block" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-plugin-demo-block/settings.html" class="nav-link router-link-exact-active router-link-active">English</a></li><li class="dropdown-item"><!----> <a href="/vuepress-plugin-demo-block/zh/settings.html" class="nav-link">简体中文</a></li></ul></div></div> <a href="https://github.com/d0whc3r/vuepress-plugin-demo-block" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-plugin-demo-block/" class="sidebar-link">Introduction</a></li><li><a href="/vuepress-plugin-demo-block/vue.html" class="sidebar-link">Vue Demo</a></li><li><a href="/vuepress-plugin-demo-block/react.html" class="sidebar-link">React Demo</a></li><li><a href="/vuepress-plugin-demo-block/vanilla.html" class="sidebar-link">Vanilla Demo</a></li><li><a href="/vuepress-plugin-demo-block/settings.html" class="active sidebar-link">Settings</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress-plugin-demo-block/settings.html#globel-settings" class="sidebar-link">globel settings</a></li><li class="sidebar-sub-header"><a href="/vuepress-plugin-demo-block/settings.html#component-settings" class="sidebar-link">component settings</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="settings"><a href="#settings" aria-hidden="true" class="header-anchor">#</a> Settings</h1> <p>The configuration of the plugin is divided into a global configuration and a component configuration, which is used to set the style of the plugin and the external dependencies of the code after jumping to Jsfiddle or Codepen.</p> <h2 id="globel-settings"><a href="#globel-settings" aria-hidden="true" class="header-anchor">#</a> globel settings</h2> <p>config.js</p> <div class="language-js extra-class"><pre class="language-js"><code>plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">[</span><span class="token string">'demo-block'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    settings<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      jsLib<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'http://xxx'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// js dependency in the online example (jsfiddle, codepen)</span>
+      cssLib<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'http://xxx'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// css dependency in the online example (jsfiddle, codepen)</span>
+      vue<span class="token punctuation">:</span> <span class="token string">'http://xxx'</span><span class="token punctuation">,</span> <span class="token comment">// vue dependency in the online example (jsfiddle, codepen)</span>
+      react<span class="token punctuation">:</span> <span class="token string">'http://xxx'</span><span class="token punctuation">,</span> <span class="token comment">// react dependency in the online example (jsfiddle, codepen)</span>
+      reactDOM<span class="token punctuation">:</span> <span class="token string">'http://xxx'</span><span class="token punctuation">,</span> <span class="token comment">// reactDOM dependency in the online example (jsfiddle, codepen)</span>
+      jsfiddle<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// Whether to display the jsfiddle link</span>
+      codepen<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// Whether to display the codepen link</span>
+      horizontal<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token comment">// Whether to display horizontal view</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="component-settings"><a href="#component-settings" aria-hidden="true" class="header-anchor">#</a> component settings</h2> <div class="language-html extra-class"><pre class="language-html"><code>::: demo
+```html
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>box-vue<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Vue {{ message }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> message<span class="token punctuation">:</span> <span class="token string">'Hello World'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+<span class="token selector">.box-vue</span> <span class="token punctuation">{</span> <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+` ` `
+` ` `json
+{
+  jsLib: ['xxx'], // js dependency in the online example (jsfiddle, codepen)
+  cssLib: ['xxx'], // css dependency in the online example (jsfiddle, codepen)
+  horizontal: false // Whether to display horizontal view
+}
+` ` `
+:::
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/d0whc3r/vuepress-plugin-demo-block/edit/master/docs/settings.md" target="_blank" rel="noopener noreferrer">Edit this page on GitHub</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">1/21/2019, 9:15:26 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/vuepress-plugin-demo-block/vanilla.html" class="prev">
+          Vanilla Demo
+        </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress-plugin-demo-block/assets/js/app.1039de93.js" defer></script><script src="/vuepress-plugin-demo-block/assets/js/2.8f000fed.js" defer></script><script src="/vuepress-plugin-demo-block/assets/js/7.49c44ff3.js" defer></script>
+  </body>
+</html>

@@ -8,7 +8,7 @@
     "build": "vuepress build docs",
     "comp": "rollup -c rollup.config.js",
     "watch": "rollup -wc rollup.config.js",
-    "deploy": "yarn comp && yarn build && yarn version",
+    "deploy": "yarn comp && ./deploy.sh && yarn version",
     "deploy:patch": "yarn deploy --patch && npm publish",
     "deploy:minor": "yarn deploy --minor && npm publish",
     "deploy:major": "yarn deploy --major && npm publish",
@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/d0whc3r/vuepress-plugin-demo-block/issues"
   },
-  "homepage": "https://github.com/d0whc3r/vuepress-plugin-demo-block#readme",
+  "homepage": "https://d0whc3r.github.io/vuepress-plugin-demo-block/",
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",

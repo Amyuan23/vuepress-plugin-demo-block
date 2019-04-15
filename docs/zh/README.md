@@ -15,7 +15,7 @@ Demo Block 用于帮助你在编写文档时增加 vue ,react, 原生js 示例�
 ### 安装插件
 
 ```
-npm i vuepress-plugin-demo-block
+npm i @d0whc3r/vuepress-plugin-demo-block
 ```
 
 ### 配置 vuepress config

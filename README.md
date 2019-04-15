@@ -1,10 +1,10 @@
 # vuepress-plugin-demo-block
 
-![download](https://img.shields.io/npm/dm/vuepress-plugin-demo-block.svg)
-[![version](https://img.shields.io/npm/v/vuepress-plugin-demo-block.svg)](https://www.npmjs.com/package/vuepress-plugin-demo-block)
+![download](https://img.shields.io/npm/dm/@d0whc3r%2Fvuepress-plugin-demo-block.svg)
+[![npm version](https://img.shields.io/npm/v/@d0whc3r%2Fvuepress-plugin-demo-block.svg)](https://www.npmjs.com/package/@d0whc3r/vuepress-plugin-demo-block)
 ![language](https://img.shields.io/badge/language-javascript-yellow.svg)
 ![License](https://img.shields.io/badge/license-MIT-000000.svg)
-[![](https://img.shields.io/circleci/project/github/xiguaxigua/vuepress-plugin-demo-block/master.svg)](https://circleci.com/gh/xiguaxigua/vuepress-plugin-demo-block)
+[![](https://img.shields.io/circleci/project/github/d0whc3r/vuepress-plugin-demo-block/master.svg)](https://circleci.com/gh/d0whc3r/vuepress-plugin-demo-block)
 
 ## Introduction
 
@@ -29,7 +29,7 @@ Reference official document [Vuepress](https://vuepress.vuejs.org)
 ### install plugin
 
 ```
-npm i vuepress-plugin-demo-block --save-dev
+npm i @d0whc3r/vuepress-plugin-demo-block --save-dev
 ```
 
 ### set vuepress config
@@ -104,9 +104,13 @@ App.__style__ = `
 ::: demo [vanilla]
 ```html
 <html>
-  <div id="vanilla-box"></div>
+  <div id="vanilla-box" onclick="someFunction()"></div>
 </html>
 <script>
+  function someFunction() {
+    console.log('hello world');
+    alert('hello world');
+  }
   var box = document.getElementById('vanilla-box')
   box.innerHTML = 'Hello World!'
 </script>

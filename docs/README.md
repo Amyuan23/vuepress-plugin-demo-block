@@ -15,7 +15,7 @@ Reference official document [Vuepress](https://vuepress.vuejs.org)
 ### install plugin
 
 ```
-npm i vuepress-plugin-demo-block --save-dev
+npm i @d0whc3r/vuepress-plugin-demo-block --save-dev
 ```
 
 ### set vuepress config

@@ -14,7 +14,7 @@ module.exports = {
   ga: 'UA-122325348-1',
   serviceWorker: true,
   themeConfig: {
-    repo: 'xiguaxigua/vuepress-plugin-demo-block',
+    repo: 'd0whc3r/vuepress-plugin-demo-block',
     editLinks: true,
     docsDir: 'docs',
     locales: {
